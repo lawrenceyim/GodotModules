@@ -1,0 +1,1 @@
+Create a Scene/Autoload folder and create Node with scripts that have IAutoload. Add them to the Project Autoload settings.
