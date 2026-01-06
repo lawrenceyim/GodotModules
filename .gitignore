@@ -2,3 +2,49 @@
 .godot/
 /android/
 Export/
+
+# ================================
+# JetBrains Rider
+# ================================
+.idea/
+*.sln.iml
+
+# Rider cache / workspace
+.idea/.idea.*
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# ================================
+# .NET / C#
+# ================================
+bin/
+obj/
+[Bb]uild/
+[Bb]uilds/
+TestResults/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ================================
+# NuGet
+# ================================
+*.nupkg
+.nuget/
+packages/
+
+# ================================
+# Logs
+# ================================
+*.log
+
+# ================================
+# OS files
+# ================================
+.DS_Store
+Thumbs.db
