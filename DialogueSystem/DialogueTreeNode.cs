@@ -1,3 +1,5 @@
+using System;
+
 namespace DialogueSystem;
 
 // Use ID of -1 to indicate end of dialogue tree path
@@ -43,10 +45,12 @@ public class ConditionNode : DialogueTreeNode {
 // The Rpc Action should perform an action like adding player gold, flipping a bool, etc.
 public class RpcNode : DialogueTreeNode {
     public Action Rpc { get; }
+    public int NextNodeId { get; }
 
     public RpcNode() { }
 
-    public RpcNode(Action rpc) {
+    public RpcNode(Action rpc, int nextNodeId) {
         Rpc = rpc;
+        NextNodeId = nextNodeId;
     }
 }

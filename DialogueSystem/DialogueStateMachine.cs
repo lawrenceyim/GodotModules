@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace DialogueSystem;
 
 public class DialogueStateMachine {
@@ -7,6 +9,15 @@ public class DialogueStateMachine {
     public DialogueTreeNode? Evaluate() {
         _currentState ??= FindState(0);
         return _currentState?.Evaluate();
+    }
+
+    public DialogueTreeNode? FindNode(int id) {
+        _currentState ??= FindState(0);
+        return _currentState?.FindNode(id);
+    }
+
+    public void SwitchState(int key) {
+        _currentState = FindState(key);
     }
 
     public void AddState(int key, IDialogueState state) {
