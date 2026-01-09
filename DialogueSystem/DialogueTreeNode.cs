@@ -25,7 +25,7 @@ public class QuestionNode : DialogueTreeNode {
     public QuestionNode() { }
 
     public QuestionNode(int questionTextId, int[] nextNodesId, int[] answerTextsId) {
-        questionTextId = questionTextId;
+        QuestionTextId = questionTextId;
         NextNodesId = nextNodesId;
         AnswerTextsId = answerTextsId;
     }
